@@ -1,0 +1,208 @@
+/* --- home.css (Estilo Exclusivo da Capa) --- */
+
+/* Variáveis locais */
+:root {
+    --netflix-red: #E50914;
+    --dark-bg: #141414;
+    --dark-card: #1f1f1f;
+}
+
+/* Reset específico para garantir largura total */
+body {
+    overflow-x: hidden;
+    background-color: var(--dark-bg);
+}
+
+/* HERO SECTION (O Banner Gigante) */
+.hero-section {
+    height: 85vh; /* Quase a altura toda da tela */
+    width: 100%;
+    position: relative;
+    background: linear-gradient(to top, #141414 10%, rgba(0,0,0,0.2) 50%, rgba(0,0,0,0.8) 100%),
+                url('https://assets.nflxext.com/ffe/siteui/vlv3/f841d4c7-10e1-40af-bcae-07a3f8dc141a/f6d7434e-d6de-4185-a6d4-c77a2d08737b/BR-pt-20220502-popsignuptwoweeks-perspective_alpha_website_medium.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: -80px; /* Puxa para cima para ficar atrás do header transparente */
+}
+
+.hero-content {
+    max-width: 900px;
+    padding: 20px;
+    z-index: 2;
+    animation: fadeInUp 1s ease-out;
+}
+
+.hero-tag {
+    background-color: rgba(229, 9, 20, 0.2);
+    color: var(--netflix-red);
+    padding: 8px 16px;
+    border-radius: 50px;
+    font-weight: bold;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border: 1px solid var(--netflix-red);
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.hero-title {
+    font-size: 4.5rem;
+    font-weight: 800;
+    line-height: 1.1;
+    margin-bottom: 20px;
+    text-shadow: 0 4px 10px rgba(0,0,0,0.8);
+}
+
+.hero-subtitle {
+    font-size: 1.3rem;
+    color: #ccc;
+    margin-bottom: 40px;
+    font-weight: 300;
+}
+
+/* Botão Principal Estilizado */
+.cta-button {
+    background: var(--netflix-red);
+    color: white;
+    padding: 18px 50px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 4px;
+    transition: all 0.3s;
+    box-shadow: 0 0 20px rgba(229, 9, 20, 0.4);
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.cta-button:hover {
+    background: #f40612;
+    transform: scale(1.05);
+    box-shadow: 0 0 40px rgba(229, 9, 20, 0.6);
+}
+
+/* CARDS FLUTUANTES */
+.features-container {
+    max-width: 1200px;
+    margin: -100px auto 50px; /* Sobe por cima do banner */
+    padding: 0 20px;
+    position: relative;
+    z-index: 5;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.feature-card {
+    background: rgba(30, 30, 30, 0.95);
+    backdrop-filter: blur(10px);
+    padding: 40px 30px;
+    border-radius: 12px;
+    border: 1px solid #333;
+    transition: all 0.4s ease;
+    cursor: pointer;
+    display: block; /* Para o link funcionar em todo o card */
+}
+
+.feature-card:hover {
+    transform: translateY(-15px);
+    border-color: var(--netflix-red);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.5);
+}
+
+.icon-box {
+    width: 60px;
+    height: 60px;
+    background: #2b2b2b;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    color: var(--netflix-red);
+    margin-bottom: 20px;
+    transition: 0.3s;
+}
+
+.feature-card:hover .icon-box {
+    background: var(--netflix-red);
+    color: white;
+}
+
+.feature-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.feature-card p {
+    color: #aaa;
+    line-height: 1.6;
+    font-size: 0.95rem;
+}
+
+/* SEÇÃO DE TÓPICOS */
+.quick-access-section {
+    max-width: 1200px;
+    margin: 80px auto;
+    padding: 0 20px;
+}
+
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 40px;
+    border-bottom: 1px solid #333;
+    padding-bottom: 20px;
+}
+
+.section-header h2 {
+    font-size: 2rem;
+    color: white;
+}
+
+.topic-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.topic-link {
+    background: #1f1f1f;
+    padding: 20px;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: 0.3s;
+    border-left: 3px solid transparent;
+}
+
+.topic-link:hover {
+    background: #252525;
+    border-left: 3px solid var(--netflix-red);
+    padding-left: 25px; /* Efeito de deslize */
+}
+
+.topic-info strong { display: block; color: white; margin-bottom: 4px; }
+.topic-info span { font-size: 0.85rem; color: #777; }
+
+/* Animação */
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(40px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .hero-title { font-size: 2.5rem; }
+    .features-container { margin-top: 20px; }
+    .hero-section { height: 70vh; margin-top: 0; }
+    .topic-grid { grid-template-columns: 1fr; }
+}

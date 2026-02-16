@@ -4,61 +4,115 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pontiac | Manual Netflix</title>
+    <title>Pontiac | Hub de Documentação</title>
     <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/home.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
     <style>
-        .hero {
-            height: 80vh;
-            background: linear-gradient(rgba(0,0,0,0.7), #141414), url('https://assets.nflxext.com/ffe/siteui/vlv3/f841d4c7-10e1-40af-bcae-07a3f8dc141a/f6d7434e-d6de-4185-a6d4-c77a2d08737b/BR-pt-20220502-popsignuptwoweeks-perspective_alpha_website_medium.jpg');
-            background-size: cover;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            padding: 20px;
-        }
-
-        .hero h1 {
-            font-size: 3.5rem;
-            margin-bottom: 20px;
-        }
-
-        .btn-start {
-            background-color: #E50914;
-            color: white;
-            padding: 15px 40px;
-            font-size: 1.5rem;
-            border-radius: 4px;
-            font-weight: bold;
-        }
-
-        .btn-start:hover { background-color: #f40612; }
+        header { background: rgba(0,0,0,0.1) !important; border-bottom: none !important; position: relative; z-index: 10; }
     </style>
 </head>
 
 <body>
+
     <header>
         <div class="logo">PONTIAC</div>
-
         <nav class="nav-menu">
-            <a href="index.html">Home</a>
-            <a href="suporte.html">Ajuda</a>
+            <a href="https://www.netflix.com" target="_blank">Ir para Netflix <i class="fas fa-external-link-alt"></i></a>
+            <a href="suporte.html" style="background: #E50914; padding: 8px 20px; border-radius: 4px; color: white; font-weight: bold;">Ajuda</a>
         </nav>
     </header>
 
-    <div class="hero">
-        <h1>Documentação Oficial Pontiac</h1>
-        <p style="font-size: 1.2rem; max-width: 700px; margin-bottom: 30px; color: #ccc;">
-            Bem-vindo ao centro de conhecimento. Aqui você encontra o guia completo de utilização da plataforma <strong>Netflix</strong>, desenvolvido pela equipe da Pontiac.
-        </p>
-        <a href="intro.html" class="btn-start">Ler Manual <i class="fas fa-chevron-right"></i></a>
+    <section class="hero-section">
+        <div class="hero-content">
+            <span class="hero-tag">Documentação Oficial v2.0</span>
+            <h1 class="hero-title">Domine a experiência<br>Netflix</h1>
+            <p class="hero-subtitle">
+                Um guia técnico completo desenvolvido pela Pontiac para otimizar<br>
+                sua configuração, conta e qualidade de streaming.
+            </p>
+            <a href="intro.html" class="cta-button">
+                Acessar Manual <i class="fas fa-play"></i>
+            </a>
+        </div>
+    </section>
+
+    <div class="features-container">
+        <a href="intro.html" class="feature-card">
+            <div class="icon-box"><i class="fas fa-rocket"></i></div>
+            <h3>Primeiros Passos</h3>
+            <p>Novo na plataforma? Aprenda a configurar seus dispositivos e realizar o primeiro acesso com segurança.</p>
+        </a>
+
+        <a href="perfis.html" class="feature-card">
+            <div class="icon-box"><i class="fas fa-users-cog"></i></div>
+            <h3>Gestão de Perfis</h3>
+            <p>Controle parental, perfis Kids e bloqueio por PIN. Organize a experiência para toda a família.</p>
+        </a>
+
+        <a href="suporte.html" class="feature-card">
+            <div class="icon-box"><i class="fas fa-tools"></i></div>
+            <h3>Troubleshooting</h3>
+            <p>Códigos de erro? Travamentos? Acesse o guia técnico de resolução de problemas da Pontiac.</p>
+        </a>
     </div>
 
-    <footer>
-        <p>Pontiac Solutions © 2026. Manual técnico desenvolvido para usuários Netflix.</p>
+    <section class="quick-access-section">
+        <div class="section-header">
+            <div>
+                <h2 style="margin-bottom: 5px;">Acesso Rápido</h2>
+                <p style="color: #666;">Tópicos mais procurados pelos usuários hoje.</p>
+            </div>
+
+            <a href="intro.html" style="color: #E50914; font-weight: bold;">Ver Índice Completo <i class="fas fa-arrow-right"></i></a>
+        </div>
+
+        <div class="topic-grid">
+            <a href="offline.html" class="topic-link">
+                <div class="topic-info">
+                    <strong>Downloads Offline</strong>
+                    <span>Como assistir sem internet em viagens</span>
+                </div>
+
+                <i class="fas fa-chevron-right" style="color:#444"></i>
+            </a>
+
+            <a href="config.html" class="topic-link">
+                <div class="topic-info">
+                    <strong>Qualidade 4K & HDR</strong>
+                    <span>Como forçar a máxima qualidade de imagem</span>
+                </div>
+
+                <i class="fas fa-chevron-right" style="color:#444"></i>
+            </a>
+
+            <a href="player.html" class="topic-link">
+                <div class="topic-info">
+                    <strong>Personalizar Legendas</strong>
+                    <span>Alterar cor, tamanho e fundo dos textos</span>
+                </div>
+
+                <i class="fas fa-chevron-right" style="color:#444"></i>
+            </a>
+
+            <a href="suporte.html" class="topic-link">
+                <div class="topic-info">
+                    <strong>Erro UI-800-3</strong>
+                    <span>Diagnóstico e correção de falha de login</span>
+                </div>
+
+                <i class="fas fa-chevron-right" style="color:#444"></i>
+            </a>
+        </div>
+    </section>
+
+    <footer style="background: #000; padding: 50px 20px; text-align: center; border-top: 1px solid #222;">
+        <h2 class="logo" style="margin-bottom: 20px; font-size: 1.5rem;">PONTIAC</h2>
+        <p style="color: #555; max-width: 600px; margin: 0 auto 30px;">
+            A Pontiac Solutions fornece documentação técnica especializada para grandes plataformas de mídia. 
+            Este site é um guia de uso e não representa a Netflix Inc.
+        </p>
+        <p style="color: #333; font-size: 0.8rem;">© 2026 Pontiac Solutions. Todos os direitos reservados.</p>
     </footer>
 </body>
 
