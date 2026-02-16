@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pontiac | Suporte</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <a href="index.html" class="logo">PONTIAC</a>
+
+        <nav class="nav-menu">
+            <a href="index.html">Home</a>
+            <a href="suporte.html">Ajuda</a>
+        </nav>
+    </header>
+
+    <div class="main-container">
+        <aside class="sidebar">
+            <h3>Menu do Manual</h3>
+
+            <nav>
+                <a href="intro.html" class="menu-item"><i class="fas fa-power-off"></i> Introdução</a>
+                <a href="perfis.html" class="menu-item"><i class="fas fa-users"></i> Gerenciar Perfis</a>
+                <a href="navegacao.html" class="menu-item"><i class="fas fa-compass"></i> Navegação</a>
+                <a href="player.html" class="menu-item"><i class="fas fa-play-circle"></i> O Player</a>
+                <a href="offline.html" class="menu-item"><i class="fas fa-download"></i> Offline</a>
+                <a href="config.html" class="menu-item"><i class="fas fa-cog"></i> Configurações</a>
+                <a href="suporte.html" class="menu-item"><i class="fas fa-tools"></i> Problemas</a>
+            </nav>
+        </aside>
+
+        <main class="content">
+            <h1>Resolução de Problemas (Troubleshooting)</h1>
+            <span class="subtitle">Esta é a seção técnica "traduzida". Aqui você encontra ferramentas para diagnosticar sua rede e corrigir erros comuns de conexão ou reprodução sem precisar desinstalar o aplicativo.</span>
+
+            <div class="card-grid">
+                <div class="info-card">
+                    <h3><i class="fas fa-network-wired" style="color: #E50914;"></i> Diagnóstico e Conexão</h3>
+                    <p>Antes de culpar a operadora de internet, o aplicativo possui uma ferramenta interna que verifica se os servidores da Netflix estão acessíveis. Erros de conexão (como o código UI-800-3) geralmente indicam que o aparelho precisa atualizar as informações de login.</p>
+
+                    <ul>
+                        <li>Vá em Obter Ajuda > Verificar Rede.</li>
+                        <li><strong>Erro UI-800-3:</strong> Geralmente requer atualização de login. Selecione "Sair" ou reinicie o modem.</li>
+                    </ul>
+
+                    <div class="note-box">
+                        A verificação de rede dentro do aplicativo mede a velocidade específica da conexão com os servidores de vídeo da Netflix, que pode ser diferente da velocidade geral da sua internet.
+                    </div>
+                </div>
+
+                <div class="info-card">
+                    <h3><i class="fas fa-broom" style="color: #E50914;"></i> Reprodução e Cache</h3>
+                    <p>Quando o vídeo não carrega ou trava (Erros como AIP-701), muitas vezes o aplicativo está sobrecarregado com arquivos temporários ("lixo digital"). A limpeza de cache resolve isso "resetando" o funcionamento do aplicativo sem apagar seus downloads.</p>
+
+                    <ul>
+                        <li>Vá nas configs do aparelho > Apps > Netflix.</li>
+                        <li>Selecione <strong>Limpar Cache</strong> e Forçar Parada.</li>
+                    </ul>
+
+                    <div class="note-box">
+                        <strong>Cuidado:</strong> A opção "Limpar Dados" é diferente de "Limpar Cache". Limpar Dados fará com que você saia da sua conta e apague todos os filmes baixados.
+                    </div>
+                </div>
+
+                <div class="info-card">
+                    <h3><i class="fas fa-headset" style="color: #E50914;"></i> Contactar Suporte</h3>
+                    <p>Se as soluções automáticas falharem, você pode falar com um humano diretamente pelo aplicativo. O sistema autentica sua chamada via internet, agilizando o atendimento.</p>
+
+                    <ul>
+                        <li>Role o menu até "Ajuda".</li>
+                        <li><strong>Bate-papo:</strong> Conversa por texto.</li>
+                        <li><strong>Ligar:</strong> Chamada de voz via internet (VoIP).</li>
+                    </ul>
+                    
+                    <div class="note-box">
+                        Ao ligar pelo aplicativo, o sistema gera um "Código de Serviço" na tela. Informe esse número ao atendente para que ele acesse os dados da sua conta instantaneamente.
+                    </div>
+                </div>
+            </div>
+            
+            <div style="margin-top: 40px; text-align: right;">
+                <a href="index.html" style="color: #fff; background: #333; padding: 10px 20px; border-radius: 4px;">Voltar ao Início <i class="fas fa-home"></i></a>
+            </div>
+        </main>
+    </div>
+
+    <script src="/js/script.js"></script>
+</body>
+
+</html> 
