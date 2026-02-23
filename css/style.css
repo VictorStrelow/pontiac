@@ -167,14 +167,110 @@ header {
     color: #ccc;
 }
 
-/* FOOTER */
-footer {
-    padding: 40px;
-    text-align: center;
-    color: #555;
-    font-size: 0.8rem;
-    border-top: 1px solid #333;
-    margin-top: auto;
+.site-footer {
+    /* Gradiente de fundo escuro para o vermelho escuro */
+    background: linear-gradient(to bottom, #000000 0%, #3a0000 100%);
+    color: #b3b3b3; /* Cor do texto cinza claro */
+    padding: 60px 20px;
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.footer-links {
+    display: flex;
+    gap: 50px;
+    flex-wrap: wrap;
+    flex: 1;
+}
+
+
+.footer-cta {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding-bottom: 25px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Texto "Precisa de mais ajuda?" */
+.cta-text {
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+/* Botão branco "Entre em contato" */
+.cta-button {
+    background-color: #ffffff;
+    color: #000000;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 4px; /* Leve arredondamento nos cantos */
+    font-weight: bold;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #e0e0e0; /* Efeito visual ao passar o mouse */
+}
+
+/* Linha horizontal sutil */
+.footer-divider {
+    border: 0;
+    border-top: 1px solid #333; /* Linha escura para separar as seções */
+    margin-bottom: 30px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.footer-column {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-left: 30px;
+    margin-top: 35px;
+}
+
+.footer-column a {
+    color: #b3b3b3;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-column a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+.footer-social {
+    display: flex;
+    gap: 28px;
+    font-size: 24px;
+    margin-top: 35px;
+}
+
+.footer-social a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: opacity 0.3s ease;
+    height: 200px;
+
+}
+
+.footer-social a:hover {
+    opacity: 0.7;
 }
 
 /* Responsividade */
